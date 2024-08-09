@@ -2,9 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import Spinner from "../components/Spinner";
 import { useQuery } from "react-query";
-//import { getRestaurants } from "../helper/restaurant";
 import { getUser } from "../helper/user";
-//mport Restaurant from "../components/restaurant/Restaurant";
 import OrderManagement from "../components/Order";
 //import { AiOutlinePlusCircle, AiOutlineMinusCircle } from "react-icons/ai";
 
@@ -20,12 +18,9 @@ import {
   } from "react-icons/ai";
 
   
-//import { FaBox, FaCog, FaShoppingCart, FaUsers } from 'react-icons/fa'
-//import Card from "../components/Card";
+
 function Sidebar() {
   const navigate = useNavigate();
-  //const {theme, toggleTheme} = useContext()
-  //const { cartItems, loading } = useSelector((state) => state.rootReducer);
   const [collapsed, setCollapsed] = useState(false);
 
   const toggle = () => {
